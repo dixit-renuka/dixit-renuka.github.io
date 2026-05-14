@@ -573,6 +573,28 @@ section {
 .ec-type.device  { color: #2dd4bf; border-color: rgba(45,212,191,0.35); background: rgba(45,212,191,0.08); }
 .ec-type.software { color: #3b82f6; border-color: rgba(59,130,246,0.35); background: rgba(59,130,246,0.08); }
 
+.ep-project-img {
+  margin: 1.5rem 0 2rem;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.ep-project-img img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  max-height: 360px;
+  transition: transform 0.4s ease;
+}
+.ep-project-img:hover img { transform: scale(1.02); }
+.ep-img-caption {
+  padding: 0.75rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--text3);
+  line-height: 1.6;
+  border-top: 1px solid var(--border2);
+  background: rgba(5,6,10,0.6);
+}
 /* ══ FOOTER ══ */
 footer {
   border-top: 1px solid var(--border2); padding: 1.8rem 8vw;
